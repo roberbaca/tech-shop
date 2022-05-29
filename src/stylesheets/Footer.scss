@@ -1,0 +1,66 @@
+@use "./Style.scss";
+
+footer {
+    display: flex;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    background-color: Style.$background-color;   
+    border-top: 3px solid;
+    border-color: Style.$main-color;
+
+    margin-top: 2rem;
+
+    .footer__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        text-align: left;
+    }
+
+    p {
+        color: grey;
+        text-align: justify;
+    }
+
+    .footer__iconcontainer {
+        display: flex;
+        align-items: center;
+
+        .icon{
+            margin-right: 0.5rem;
+            color: Style.$main-color;
+        }
+    }
+}
+
+.footer__aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer__categoriescontainer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer__informationcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer__servicecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

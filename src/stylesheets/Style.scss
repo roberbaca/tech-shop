@@ -1,0 +1,79 @@
+/*
+
+Colors:
+	Body 		: #333
+	Headers 	: #2B2D42
+	Primary 	: #D10024
+	Dark 		: #15161D ##1E1F29
+	Grey 		: #E4E7ED #FBFBFC #8D99AE #B9BABC
+
+Fonts: Montserrat
+
+*/
+
+@import "fontawesome-free-6.1.1-web/scss/fontawesome.scss";
+@import "fontawesome-free-6.1.1-web/scss/solid.scss";
+@import "fontawesome-free-6.1.1-web/scss/brands.scss";
+@import "fontawesome-free-6.1.1-web/scss/regular.scss";
+
+$background-color: rgb(21,22,29);
+$main-color: #D10024;
+
+/*-----------------
+	Typography
+-------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+  
+// h1, h2, h3, h4, h5, h6 {
+//     color: #2B2D42;
+//     font-weight: 700;
+//     margin: 0 0 10px;
+// }
+  
+// a {
+//     color: #2B2D42;
+//     font-weight: 500;
+//     -webkit-transition: 0.2s color;
+//     transition: 0.2s color;
+// }
+  
+// a:hover, a:focus {
+//     color: #D10024;
+//     text-decoration: none;
+//     outline: none;
+// }
+  
+// ul, ol {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none
+// }
+
+
+/*------------
+	Buttons
+--------------*/
+
+.primary-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #D10024;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    // text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+  
+.primary-btn:hover, .primary-btn:focus {
+    opacity: 0.9;
+    color: #FFF;
+}
