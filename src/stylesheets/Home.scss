@@ -64,7 +64,7 @@ $animationSpeed: 40s;
 		top: 0;
 	}
 	
-	.slide-track {
+	.slide__track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(250px * 14);
@@ -74,4 +74,10 @@ $animationSpeed: 40s;
 		height: 100px;
 		width: 250px;
 	}
+}
+
+.product__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

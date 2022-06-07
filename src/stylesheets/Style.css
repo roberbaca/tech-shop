@@ -10153,7 +10153,6 @@ readers do not read off random characters that represent icons */
 -------------------*/
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   color: #333;
 }
 

@@ -10153,7 +10153,6 @@ readers do not read off random characters that represent icons */
 -------------------*/
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   color: #333;
 }
 
@@ -10229,7 +10228,7 @@ body {
   left: 0;
   top: 0;
 }
-.slider .slide-track {
+.slider .slide__track {
   animation: scroll 40s linear infinite;
   display: flex;
   width: 3500px;
@@ -10237,6 +10236,12 @@ body {
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+.product__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=Home.css.map */

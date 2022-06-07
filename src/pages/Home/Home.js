@@ -1,4 +1,5 @@
 import React from 'react'
+import Product from '../../components/Product/Product';
 import '../../stylesheets/Home.css';
 import '../../stylesheets/Style.css';
 
@@ -15,9 +16,15 @@ const Home = () => {
 			<img src={require("../../assets/refCompraSegura330.png")} alt="banner_img" className='banner'/>
 		</div>
 
+		<div className='product__container'>
+			<Product/>
+			<Product/>
+			<Product/>
+			<Product/>
+		</div>
 
     	<div class="slider">
-			<div class="slide-track">
+			<div class="slide__track">
 				<div class="slide">
 					<img src={require("../../assets/marca-samsung.png")}height="100" width="250" alt="" />
 				</div>
