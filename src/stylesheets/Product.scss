@@ -8,7 +8,7 @@
  
     .product__card {
         border: solid 0.1rem;
-        border-color: rgb(221, 221, 221);
+        border-color: Style.$lightgrey;
         background-color: white;        
         box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
         transition: 0.2s all;
@@ -22,22 +22,20 @@
         font-size: 2rem;
 
         .wishlist:hover {
-            color: #D10024;
+            color: Style.$main-color;
             cursor: pointer;
             transition: 0.2s all;
         }
 
         .product__label {
-
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            
+            justify-content: flex-start;            
 
             .sale {
                 border: 0.15rem solid;
-                border-color: #D10024;
-                color: #D10024;
+                border-color: Style.$main-color;
+                color: Style.$main-color;
                 padding:  0.15rem 0.1rem;
                 font-size: 0.8rem;
                 margin: 0;  
@@ -49,9 +47,9 @@
             }
 
             .new {
-                background-color: #D10024;
-                border-color: #D10024;
-                color: #FFF;
+                background-color: Style.$main-color;
+                border-color: Style.$main-color;
+                color: white;
                 padding:  0.15rem 0.1rem;
                 font-size: 0.8rem;
                 margin: 0; 
@@ -72,7 +70,7 @@
     .product__category {
         text-transform: uppercase;
         font-size: 0.8rem;
-        color: #8D99AE;
+        color: Style.$grey;
         margin: 0;
         margin-bottom: 0.5rem;
     }
@@ -93,15 +91,12 @@
     .product__price {
         color: Style.$main-color;
         font-weight: 700;
-    }
-
- 
+    } 
 
     .addtocart {   
-
         width: 17rem;    
         height: 5rem;       
-        color: #D10024;
+        color: Style.$main-color;
         background-color: #1e1f29;          
         display: flex;
         justify-content: center;
@@ -115,7 +110,7 @@
         z-index: -1;        
 
         .addtocart__btn {
-            background-color:  #D10024;
+            background-color:  Style.$main-color;
             color: white;
             border: none;
             font-size: 1.2rem;
