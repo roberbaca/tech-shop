@@ -1,6 +1,7 @@
 import Auth from "../pages/Auth/Auth"
 import Cart from "../pages/Cart/Cart"
 import Home from "../pages/Home/Home"
+import ProductDetails from "../pages/ProductDetails/ProductDetails"
 
 export const PATHS = {
     
@@ -33,6 +34,11 @@ export const PATHS = {
         {
             path: '/home',           
             element: <Home/>
+        },
+
+        {
+            path: '/product-details',           
+            element: <ProductDetails/>
         },
 
         {

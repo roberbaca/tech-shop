@@ -11,6 +11,9 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 2rem;
+    border-bottom: 0.1rem solid;
+    border-color: rgb(221, 221, 221);
+    // background-color: rgb(221, 221, 221);
 
     .navbar__filter {
         padding-left: 0.5rem;
@@ -55,10 +58,11 @@
     height: 7rem;
     border-bottom: 3px solid;
     border-color: Style.$main-color;
-    padding-right: 1rem;
+    padding-right: 2rem;
     
     .navbar__sitelogo img {
         width: 20rem;
+        padding-left: 2rem;
 
         .sitelogo__link:hover {
             cursor: pointer;

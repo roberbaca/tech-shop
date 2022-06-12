@@ -1,5 +1,4 @@
 @use "./Style.scss";
-// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .hotdeal{
     width: 100%;
@@ -80,4 +79,8 @@ $animationSpeed: 40s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.link {
+	text-decoration: none;
 }

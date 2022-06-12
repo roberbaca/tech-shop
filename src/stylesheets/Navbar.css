@@ -48,6 +48,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-left: 2rem;
+  border-bottom: 0.1rem solid;
+  border-color: rgb(221, 221, 221);
 }
 .navbar__bottom .navbar__filter {
   padding-left: 0.5rem;
@@ -88,10 +90,11 @@ body {
   height: 7rem;
   border-bottom: 3px solid;
   border-color: #D10024;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 .navbar__top .navbar__sitelogo img {
   width: 20rem;
+  padding-left: 2rem;
 }
 .navbar__top .navbar__sitelogo img .sitelogo__link:hover {
   cursor: pointer;

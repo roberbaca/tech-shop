@@ -2,6 +2,7 @@ import React from 'react'
 import Product from '../../components/Product/Product';
 import '../../stylesheets/Home.css';
 import '../../stylesheets/Style.css';
+//import { Link } from "react-router-dom"
 
 const Home = () => {
 
@@ -13,7 +14,6 @@ const Home = () => {
 			name: "Producto 01",
 			price:"198000",
 			category: "computacion",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			stock: 1,
 		},
 
@@ -22,7 +22,6 @@ const Home = () => {
 			name: "Producto 02",
 			price:"35000",
 			category: "computacion",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			stock: 1,
 		},
 
@@ -31,7 +30,6 @@ const Home = () => {
 			name: "Producto 03",
 			price:"236000",
 			category: "computacion",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			stock: 1,
 		},
 
@@ -40,7 +38,6 @@ const Home = () => {
 			name: "Producto 04",
 			price:"95000",
 			category: "computacion",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			stock: 1,
 		}
 	]
@@ -62,8 +59,7 @@ const Home = () => {
 
 		<div className='product__container'>
 
-		{productList.map( (p, index)  => 
-		
+		{productList.map( (p, index)  => 			
 			<Product imgURL = {p.imgURL} category ={p.category} name = {p.name} price={(p.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })} key = {index}/>
 		)} 
 		
@@ -71,48 +67,48 @@ const Home = () => {
 
 		</div>
 
-    	<div class="slider">
-			<div class="slide__track">
-				<div class="slide">
+    	<div className="slider">
+			<div className="slide__track">
+				<div className="slide">
 					<img src={require("../../assets/marca-samsung.png")}height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaLiliana.png")} height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaPeabody.png")} height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaLongvie.png")}  height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marca-atma.png")}  height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marca-philips.png")} height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaNoblex.png")} height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marca-samsung.png")}height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaLiliana.png")} height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaPeabody.png")} height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaLongvie.png")}  height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marca-atma.png")}  height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marca-philips.png")} height="100" width="250" alt="" />
 				</div>
-				<div class="slide">
+				<div className="slide">
 					<img src={require("../../assets/marcaNoblex.png")} height="100" width="250" alt="" />
 				</div>
     		</div>

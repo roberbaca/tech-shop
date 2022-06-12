@@ -40,7 +40,7 @@ const Navbar = () => {
                     <Link to ="/wishlist" className='user__link'>
                         <FaRegHeart className='user__icon'/>
                         <h4 className='user__icon--title'>Mis Favoritos</h4>
-                        <p class="qty">5</p>
+                        <p className="qty">5</p>
                     </Link>                      
                 </div>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <Link to ="/cart" className='user__link'>
                         <FaShoppingCart className='user__icon'/>
                         <h4 className='user__icon--title'>Mis Compras</h4>
-                        <p class="qty">5</p>
+                        <p className="qty">5</p>
                     </Link>                                      
                 </div>
 
