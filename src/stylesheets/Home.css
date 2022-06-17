@@ -2,8 +2,7 @@
 
 Colors:
 	Body 		: #333
-	Headers 	: #2B2D42
-	Primary 	: #D10024
+
 	Dark 		: #15161D ##1E1F29
 	Grey 		: #E4E7ED #FBFBFC #8D99AE #B9BABC
 
@@ -15,27 +14,6 @@ Fonts: Montserrat
 -------------------*/
 body {
   color: #333;
-}
-
-/*------------
-	Buttons
---------------*/
-.primary-btn {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #D10024;
-  border: none;
-  border-radius: 40px;
-  color: #FFF;
-  font-weight: 700;
-  text-align: center;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.primary-btn:hover, .primary-btn:focus {
-  opacity: 0.9;
-  color: #FFF;
 }
 
 .hotdeal {
@@ -97,6 +75,12 @@ body {
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+.home__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .product__container {

@@ -57,15 +57,14 @@ const Home = () => {
 
 
 
+		<h2 className='home__title'>¡Descuentos en productos seleccionados !</h2>
 		<div className='product__container'>
-
-		{productList.map( (p, index)  => 			
-			<Product imgURL = {p.imgURL} category ={p.category} name = {p.name} price={(p.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })} key = {index}/>
-		)} 
-		
-
-
+			{productList.map( (p, index)  => 			
+				<Product imgURL = {p.imgURL} category ={p.category} name = {p.name} price={(p.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })} key = {index}/>
+			)} 
 		</div>
+
+		<h2 className='home__title'>Trabajamos con todas las marcas</h2>
 
     	<div className="slider">
 			<div className="slide__track">

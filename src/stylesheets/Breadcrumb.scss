@@ -1,0 +1,32 @@
+@use "./Style.scss";
+
+.breadcrumbs {
+    background-color: rgb(250, 250, 250);
+    height: 4rem;
+    border-bottom: 0.15rem solid;
+    border-top: 0.05rem solid;
+    border-color:  rgb(238, 238, 238);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+
+    .link {
+        text-decoration: none;
+        color: Style.$headers;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .link:hover {
+        color: Style.$main-color;
+    }
+
+    .sectiontitle {
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+
+}

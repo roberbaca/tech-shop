@@ -1,0 +1,46 @@
+/*
+
+Colors:
+	Body 		: #333
+
+	Dark 		: #15161D ##1E1F29
+	Grey 		: #E4E7ED #FBFBFC #8D99AE #B9BABC
+
+Fonts: Montserrat
+
+*/
+/*-----------------
+	Typography
+-------------------*/
+body {
+  color: #333;
+}
+
+.breadcrumbs {
+  background-color: rgb(250, 250, 250);
+  height: 4rem;
+  border-bottom: 0.15rem solid;
+  border-top: 0.05rem solid;
+  border-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+.breadcrumbs .link {
+  text-decoration: none;
+  color: #2B2D42;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.breadcrumbs .link:hover {
+  color: #D10024;
+}
+.breadcrumbs .sectiontitle {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+/*# sourceMappingURL=Breadcrumb.css.map */

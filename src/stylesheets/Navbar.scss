@@ -116,7 +116,9 @@
 
         .user__iconcontainer {
             display: flex;
-            flex-direction: column;          
+            flex-direction: column;  
+            padding-left: 1rem;    
+            padding-right: 1rem;    
 
             .user__link {
                 display: block;
@@ -129,7 +131,7 @@
                 transition: ease-in-out 0.3s;
 
                 .user__icon {
-                    font-size: 1.3rem;
+                    font-size: 1.8rem;
                 }
 
                 .user__icon--title {

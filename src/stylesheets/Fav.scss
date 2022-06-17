@@ -1,0 +1,73 @@
+@use "./Style.scss";
+
+
+.fav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .fav__title {
+        font-size: 3rem;
+        color: Style.$headers;
+    }
+    
+    .fav__wraper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border: solid 0.1rem;
+        border-color: Style.$lightgrey;
+        width: 50%;
+    
+        .fav__imgcontainer {
+            width: 25%;
+    
+            .fav__img {
+                width: 6rem;
+            }
+        }
+    
+        .fav__namecontainer {
+            width: 50%;
+           
+            .fav__name {
+                margin: 0;
+            }
+        }
+    
+        .fav__pricecontainer {
+            width: 25%;
+    
+            .fav__price {
+                margin: 0;
+            }
+        } 
+        
+        .trashbtn {
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            transition: 0.2s all; 
+        }
+
+        .trashbtn:hover {
+            color: Style.$main-color;
+            cursor: pointer;
+            transition: 0.2s all; 
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .link:hover {
+            color: Style.$main-color;
+            cursor: pointer;
+            transition: 0.2s all; 
+        }
+    }
+}

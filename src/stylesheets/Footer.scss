@@ -2,6 +2,11 @@
 
 footer {
     display: flex;
+    flex-direction: column;
+}
+
+.footer__main {
+    display: flex;
     padding: 0.5rem;
     padding-top: 1.5rem;
     background-color: Style.$background-color;   
@@ -63,4 +68,47 @@ footer {
     width: 20%;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.footer__bottom {
+    display: flex;    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+    background-color: Style.$darkgrey;
+    color: Style.$grey;
+    // border-top: 0.1rem solid Style.$grey;
+
+    .footer__info {
+        width: 90%;
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .disclaimer {
+            font-size: 0.8rem;
+        }
+    }
+
+    .footer__author {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .rnblogo {
+            width: 2rem;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+    }
+
+
 }

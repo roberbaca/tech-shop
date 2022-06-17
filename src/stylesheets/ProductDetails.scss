@@ -162,13 +162,18 @@
     justify-content: center;
     align-items: center;
 
-    .mainimg {
-        width: 30rem;
-        padding-left: 2.5rem;
-    }
+    // .mainimg {
+    //     width: 20rem;
+    //     padding-left: 2.5rem;
+    // }
+
+    // .mainimg:hover{
+    //   cursor: pointer;
+    // }
     
     .thumbnails__wraper {
-
+      margin-right: 2.5rem;
+      
         .thumbnails__container {
             margin: 0;
             padding: 0;

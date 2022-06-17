@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { productImages } from '../../data/data';
 import { AiOutlineShoppingCart} from 'react-icons/ai';
 import { FaMinus, FaPlus } from 'react-icons/fa';
+import ImageMagnifier from '../../components/ImageMagnifier/ImageMagnifier';
 import '../../stylesheets/ProductDetails.css';
 import '../../stylesheets/Style.css';
 
@@ -37,7 +38,10 @@ const ProductDetails = () => {
 				);
 				})}
 			</div>
-			<img src={mainImg} alt='product' className='mainimg'/>
+			
+			{/* <img src={mainImg} alt='product' className='mainimg'/> */}
+			{/* <ImageMagnifier className='mainimg' src={mainImg} width = {"2rem"} height ={"2rem"} magnifierHeight ={"100"} magnifieWidth = {"100"} zoomLevel = {"1.5"}/> */}
+			<ImageMagnifier className='mainimg' src={mainImg} width={"25rem"} magnifierHeight ={"75"} magnifieWidth = {"75"} zoomLevel = {"2"}/>
 		</div>
 
 		<div className='product__wraper'>      
