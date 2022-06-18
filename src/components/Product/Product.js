@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../stylesheets/Product.css';
 import '../../stylesheets/Style.css';
-import { AiFillHeart, AiOutlineEye, AiFillShopping } from "react-icons/ai";
+import { AiFillHeart, AiFillShopping } from "react-icons/ai";
 import { Link } from "react-router-dom"
 
 const Product = ( {imgURL, category, name, price} ) => {

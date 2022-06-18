@@ -5,6 +5,7 @@ import { FaShoppingCart, FaRegHeart } from "react-icons/fa";
 import { BiUser } from "react-icons/bi";
 import { AiFillHome } from "react-icons/ai";
 import { Link } from "react-router-dom"
+import { HashLink   } from 'react-router-hash-link';
 
 const Navbar = () => {
   return (
@@ -64,11 +65,19 @@ const Navbar = () => {
         </nav>
 
         <nav className='navbar__bottom'>
-            <p className='navbar__filter'>Inicio</p>
-            <p className='navbar__filter'>Ofertas</p>
-            <p className='navbar__filter'>Laptops</p>
-            <p className='navbar__filter'>Smartphones</p>
-            <p className='navbar__filter'>Accesorios</p>
+            <Link to ="/" className='user__link'>
+                <p className='navbar__filter'>Inicio</p>
+            </Link>  
+            <HashLink smooth to="/#sales__section" className='navbar__filter'>Ofertas</HashLink  >           
+            <Link to ="/store" className='user__link'>
+                <p className='navbar__filter'>Laptops</p>
+            </Link>
+            <Link to ="/store" className='user__link'>
+                <p className='navbar__filter'>Smartphones</p>
+            </Link>
+            <Link to ="/store" className='user__link'>
+                <p className='navbar__filter'>Accesorios</p>
+            </Link>
         </nav>
 
 

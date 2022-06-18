@@ -37,6 +37,8 @@ body {
   display: inline-block;
   position: relative;
   padding-bottom: 0.3rem;
+  text-decoration: none;
+  color: black;
 }
 .navbar__bottom .navbar__filter:hover {
   cursor: pointer;

@@ -37,10 +37,8 @@ const ProductDetails = () => {
 					</div>
 				);
 				})}
-			</div>
-			
-			{/* <img src={mainImg} alt='product' className='mainimg'/> */}
-			{/* <ImageMagnifier className='mainimg' src={mainImg} width = {"2rem"} height ={"2rem"} magnifierHeight ={"100"} magnifieWidth = {"100"} zoomLevel = {"1.5"}/> */}
+			</div>			
+	
 			<ImageMagnifier className='mainimg' src={mainImg} width={"25rem"} magnifierHeight ={"75"} magnifieWidth = {"75"} zoomLevel = {"2"}/>
 		</div>
 

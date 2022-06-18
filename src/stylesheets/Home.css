@@ -77,13 +77,13 @@ body {
   width: 250px;
 }
 
-.home__title {
+.section__title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.product__container {
+.salesdiscount__container {
   display: flex;
   justify-content: center;
   align-items: center;

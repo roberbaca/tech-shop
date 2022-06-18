@@ -56,62 +56,66 @@ const Home = () => {
 		</div>
 
 
+		<section className='sales' id='sales__section'>			
+			<h2 className='section__title'>¡Descuentos en productos seleccionados !</h2>
+			<div className='salesdiscount__container'>
+				{productList.map( (p, index)  => 			
+					<Product imgURL = {p.imgURL} category ={p.category} name = {p.name} price={(p.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })} key = {index}/>
+				)} 
+			</div>
+		</section>
 
-		<h2 className='home__title'>¡Descuentos en productos seleccionados !</h2>
-		<div className='product__container'>
-			{productList.map( (p, index)  => 			
-				<Product imgURL = {p.imgURL} category ={p.category} name = {p.name} price={(p.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })} key = {index}/>
-			)} 
-		</div>
-
-		<h2 className='home__title'>Trabajamos con todas las marcas</h2>
-
-    	<div className="slider">
-			<div className="slide__track">
-				<div className="slide">
-					<img src={require("../../assets/marca-samsung.png")}height="100" width="250" alt="" />
+		<section className='brands'>
+			<h2 className='section__title'>Trabajamos con todas las marcas</h2>
+			<div className="slider">
+				<div className="slide__track">
+					<div className="slide">
+						<img src={require("../../assets/marca-samsung.png")}height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaLiliana.png")} height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaPeabody.png")} height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaLongvie.png")}  height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marca-atma.png")}  height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marca-philips.png")} height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaNoblex.png")} height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marca-samsung.png")}height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaLiliana.png")} height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaPeabody.png")} height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaLongvie.png")}  height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marca-atma.png")}  height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marca-philips.png")} height="100" width="250" alt="" />
+					</div>
+					<div className="slide">
+						<img src={require("../../assets/marcaNoblex.png")} height="100" width="250" alt="" />
+					</div>
 				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaLiliana.png")} height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaPeabody.png")} height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaLongvie.png")}  height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marca-atma.png")}  height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marca-philips.png")} height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaNoblex.png")} height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marca-samsung.png")}height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaLiliana.png")} height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaPeabody.png")} height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaLongvie.png")}  height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marca-atma.png")}  height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marca-philips.png")} height="100" width="250" alt="" />
-				</div>
-				<div className="slide">
-					<img src={require("../../assets/marcaNoblex.png")} height="100" width="250" alt="" />
-				</div>
-    		</div>
-		</div>
+			</div>		
+		</section>
+		
+    	
     </div>
   )
 }
