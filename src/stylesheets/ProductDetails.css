@@ -146,6 +146,28 @@ body {
   cursor: pointer;
   transition: 0.2s all;
 }
+.productdetails .product__wraper .addtocart__container .addtocart__btn-soldout {
+  background-color: #8D99AE;
+  color: white;
+  border: 0.1rem solid;
+  border-color: #8D99AE;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all;
+}
+.productdetails .product__wraper .addtocart__container .addtocart__btn-soldout .addtocart__icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
 
 .gallery {
   width: 50%;

@@ -1,50 +1,14 @@
 import React from 'react'
 import Product from '../../components/Product/Product';
+import { PRODUCTS } from '../../data/data';
 import '../../stylesheets/Home.css';
 import '../../stylesheets/Style.css';
-//import { Link } from "react-router-dom"
 
 const Home = () => {
 
-
-	// esta lista debe venir de la DB
-	const productList = [
-		{
-			imgURL: require("../../assets/product01.png"),
-			name: "Producto 01",
-			price:"198000",
-			category: "computacion",
-			stock: 1,
-		},
-
-		{
-			imgURL: require("../../assets/product02.png"),
-			name: "Producto 02",
-			price:"35000",
-			category: "computacion",
-			stock: 1,
-		},
-
-		{
-			imgURL: require("../../assets/product03.png"),
-			name: "Producto 03",
-			price:"236000",
-			category: "computacion",
-			stock: 1,
-		},
-
-		{
-			imgURL: require("../../assets/product04.png"),
-			name: "Producto 04",
-			price:"95000",
-			category: "computacion",
-			stock: 1,
-		}
-	]
-
-
   return (
     <div>
+		{/* COVER SECTION */}
       	<img src={require("../../assets/hotdeal.png")} alt="hotdeal" className='hotdeal'/>
 
 		<div className='banner__wraper'>
@@ -55,16 +19,17 @@ const Home = () => {
 			<img src={require("../../assets/refCompraSegura330.png")} alt="banner_img" className='banner'/>
 		</div>
 
-
+		{/* SALES SECTION */}
 		<section className='sales' id='sales__section'>			
 			<h2 className='section__title'>¡Descuentos en productos seleccionados !</h2>
-			<div className='salesdiscount__container'>
-				{productList.map( (p, index)  => 			
-					<Product imgURL = {p.imgURL} category ={p.category} name = {p.name} price={(p.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })} key = {index}/>
+			<div className='salesdiscount__container'>			
+					{ PRODUCTS.map( (p, index)  => 			
+					p.onSale && <Product imgURL = {p.productImages[0]} category ={p.category} name = {p.name} price={p.currentPrice} key = {index} onSale = {p.onSale} discount = {p.discount} isNew = {p.isNew}/>
 				)} 
 			</div>
 		</section>
 
+		{/* BRANDS SECTION */}
 		<section className='brands'>
 			<h2 className='section__title'>Trabajamos con todas las marcas</h2>
 			<div className="slider">

@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import { productImages } from '../../data/data';
 import { AiOutlineShoppingCart} from 'react-icons/ai';
 import { FaMinus, FaPlus } from 'react-icons/fa';
 import ImageMagnifier from '../../components/ImageMagnifier/ImageMagnifier';
 import '../../stylesheets/ProductDetails.css';
 import '../../stylesheets/Style.css';
+import { PRODUCTS } from '../../data/data';
 
 const ProductDetails = () => {
-
-	const [mainImg, setMainImg] = useState(productImages[0]);
+	
+	const [mainImg, setMainImg] = useState(PRODUCTS[1].productImages[0]);
   	const [amount, setAmount] = useState(0);
 
   	const increaseAmount = (amount) => {
 		setAmount(amount + 1);
-		if (amount >= 10) {
-			setAmount(10);
+		if (amount >= PRODUCTS[1].stock) {
+			setAmount(PRODUCTS[1].stock);
 		}
   	};
  	 const decreaseAmount = (amount) => {
@@ -30,9 +30,9 @@ const ProductDetails = () => {
 
 		<div className='gallery'>
 			<div className='thumbnails__wraper'>
-				{productImages.map((image, index) => {
+				{PRODUCTS[1].productImages.map((image, index) => {
 					return (
-						<div className={ image === mainImg ? 'thumbnails__container-active thumbnails__container' : 'thumbnails__container'} key={index} onClick={() => setMainImg(productImages[index])}>
+						<div className={ image === mainImg ? 'thumbnails__container-active thumbnails__container' : 'thumbnails__container'} key={index} onClick={() => setMainImg(PRODUCTS[1].productImages[index])}>
 					<img src={image} alt='small-product' className='thumbnails__images'/>
 					</div>
 				);
@@ -43,22 +43,18 @@ const ProductDetails = () => {
 		</div>
 
 		<div className='product__wraper'>      
-			<h2 className='product__category'>Computacion</h2>
+			<h2 className='product__category'>{PRODUCTS[1].category}</h2>
 			<div className='product__header'>
-				<h1 className='product__title'>PRODUCTO 01</h1>
-				<h3 className='product__sale'>-50%</h3>
+				<h1 className='product__title'>{PRODUCTS[1].name}</h1>
+				{PRODUCTS[1].onSale && <h3 className='product__sale'>-{PRODUCTS[1].discount}%</h3>}
 			</div>
 			
 			<div className='price__container'>				
-				<h2 className='price__current'>$125.00</h2>
-				<h2 className='price__discount'>$250.00</h2>			
+				<h2 className='price__current'>${PRODUCTS[1].currentPrice}</h2>
+				<h2 className='price__discount'>${PRODUCTS[1].oldPrice}</h2>			
 			</div>
 
-			<p className='product__description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis rem aliquam, corporis explicabo animi. 
-			Esse aliquam maxime ipsa tenetur natus dicta pariatur odit ipsum consequuntur, consectetur, alias facilis reprehenderit!
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi asperiores labore saepe qui blanditiis, vero commodi ad iusto quas? Ipsum totam exercitationem
-			quaerat beatae iusto suscipit dolores voluptate, deleniti repudiandae.
-			</p>
+			<p className='product__description'>{PRODUCTS[1].description}</p>
 
 			<div className='addtocart__container'>
 				<button className='quantity__btn'>
@@ -66,9 +62,12 @@ const ProductDetails = () => {
 					<span className='quantity__number'>{amount}</span>
 					<span className='quantity__icon' onClick={() => increaseAmount(amount)}><FaPlus/></span>
 				</button>
-				<button className='addtocart__btn'><AiOutlineShoppingCart className='addtocart__icon'/>
+				{PRODUCTS[1].stock > 0 && <button className='addtocart__btn'><AiOutlineShoppingCart className='addtocart__icon'/>
 					<span>Comprar</span>
-				</button>
+				</button>}
+				{PRODUCTS[1].stock <= 0 && <button className='addtocart__btn-soldout'><AiOutlineShoppingCart className='addtocart__icon'/>
+					<span>AGOTADO</span>
+				</button>}
 			</div>
 		</div>
 

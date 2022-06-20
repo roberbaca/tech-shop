@@ -5,6 +5,7 @@ import Product from '../../components/Product/Product';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom"
+import { PRODUCTS } from '../../data/data';
 
 const Store = () => {
 
@@ -23,7 +24,7 @@ const Store = () => {
       // remove unchecked value from the list
       setCategory(prev => prev.filter(x => x !== value));
     }
-  }
+  } 
   
   const handleMinPrice = (e) => {
     setMinPrice(e.target.value);
@@ -58,41 +59,6 @@ const Store = () => {
     return;
   };    
 
-  // esta lista debe venir de la DB
-	const productList = [
-		{
-			imgURL: require("../../assets/product01.png"),
-			name: "Producto 01",
-			price:"198000",
-			category: "computacion",
-			stock: 1,
-		},
-
-		{
-			imgURL: require("../../assets/product02.png"),
-			name: "Producto 02",
-			price:"35000",
-			category: "computacion",
-			stock: 1,
-		},
-
-		{
-			imgURL: require("../../assets/product03.png"),
-			name: "Producto 03",
-			price:"236000",
-			category: "computacion",
-			stock: 1,
-		},
-
-		{
-			imgURL: require("../../assets/product04.png"),
-			name: "Producto 04",
-			price:"95000",
-			category: "computacion",
-			stock: 1,
-		}
-	]
-  
   const categories = [
     { value: "Computacion", label: "Computacion" },
     { value: "Celulares", label: "Celulares" },
@@ -159,9 +125,9 @@ const Store = () => {
         </div>
 
         <div className='products__wraper'>
-          <div className='salesdiscount__container'>
-            {productList.map( (p, index)  => 			
-              <Product imgURL = {p.imgURL} category ={p.category} name = {p.name} price={(p.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })} key = {index}/>
+          <div className='salesdiscount__container'>         
+            {PRODUCTS.map( (p, index)  => 			
+              <Product imgURL = {p.productImages[0]} category ={p.category} name = {p.name} price={(p.currentPrice)} isNew = {p.isNew} discount={p.discount} onSale = {p.onSale} key = {index}/>
             )} 
           </div>
           <div>Selected: {category.length ? category.join(', ') : null}</div> 

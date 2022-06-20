@@ -12,6 +12,12 @@
         transition: 0.2s all;
     }
 
+    .product__card:hover {
+        cursor: pointer;
+        transition: 0.2s all; 
+        border: solid 0.1rem Style.$main-color;   
+    }
+
     .product__header {
         display: flex;
         flex-direction: row;
@@ -19,7 +25,12 @@
         padding: 0.5rem;
         font-size: 2rem;
 
-        .wishlist:hover {
+        .wishlisticon {
+            color: black;
+            transition: 0.2s all;
+        }
+    
+        .wishlisticon:hover {
             color: Style.$main-color;
             cursor: pointer;
             transition: 0.2s all;
@@ -80,15 +91,15 @@
         margin: 0;
     }
 
-    .product__name:hover{
-        color: Style.$main-color;
-        transition: 0.2s all;
-    }
+    // .product__name:hover{
+    //     color: Style.$main-color;
+    //     transition: 0.2s all;
+    // }
 
     .product__price {
         color: Style.$main-color;
         font-weight: 700;
-    } 
+    }   
 
     .addtocart {   
         width: 17rem;    
@@ -140,12 +151,6 @@
             align-items: center;
         }
     }   
-}
-
-.product__card:hover {
-    cursor: pointer;
-    transition: 0.2s all; 
-    border: solid 0.1rem Style.$main-color;   
 }
 
 .product__cardwraper:hover .addtocart {

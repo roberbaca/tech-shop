@@ -36,7 +36,14 @@
            
             .fav__name {
                 margin: 0;
+                color: black;
+                transition: 0.2s all;
             }
+
+            .fav__name:hover {
+                color: Style.$main-color;
+                transition: 0.2s all;
+            }        
         }
     
         .fav__pricecontainer {

@@ -73,7 +73,7 @@ const Navbar = () => {
                 <p className='navbar__filter'>Laptops</p>
             </Link>
             <Link to ="/store" className='user__link'>
-                <p className='navbar__filter'>Smartphones</p>
+                <p className='navbar__filter'>Celulares</p>
             </Link>
             <Link to ="/store" className='user__link'>
                 <p className='navbar__filter'>Accesorios</p>

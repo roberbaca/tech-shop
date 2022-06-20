@@ -27,6 +27,11 @@ body {
   background-color: white;
   transition: 0.2s all;
 }
+.product__cardwraper .product__card:hover {
+  cursor: pointer;
+  transition: 0.2s all;
+  border: solid 0.1rem #D10024;
+}
 .product__cardwraper .product__header {
   display: flex;
   flex-direction: row;
@@ -34,7 +39,11 @@ body {
   padding: 0.5rem;
   font-size: 2rem;
 }
-.product__cardwraper .product__header .wishlist:hover {
+.product__cardwraper .product__header .wishlisticon {
+  color: black;
+  transition: 0.2s all;
+}
+.product__cardwraper .product__header .wishlisticon:hover {
   color: #D10024;
   cursor: pointer;
   transition: 0.2s all;
@@ -86,10 +95,6 @@ body {
   color: black;
   margin: 0;
 }
-.product__cardwraper .product__name:hover {
-  color: #D10024;
-  transition: 0.2s all;
-}
 .product__cardwraper .product__price {
   color: #D10024;
   font-weight: 700;
@@ -140,12 +145,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.product__card:hover {
-  cursor: pointer;
-  transition: 0.2s all;
-  border: solid 0.1rem #D10024;
 }
 
 .product__cardwraper:hover .addtocart {

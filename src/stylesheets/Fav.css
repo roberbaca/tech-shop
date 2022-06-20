@@ -48,6 +48,12 @@ body {
 }
 .fav .fav__wraper .fav__namecontainer .fav__name {
   margin: 0;
+  color: black;
+  transition: 0.2s all;
+}
+.fav .fav__wraper .fav__namecontainer .fav__name:hover {
+  color: #D10024;
+  transition: 0.2s all;
 }
 .fav .fav__wraper .fav__pricecontainer {
   width: 25%;

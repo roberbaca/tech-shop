@@ -150,6 +150,30 @@
                 transition: 0.2s all;             
             }
 
+            .addtocart__btn-soldout {
+              background-color: Style.$grey;
+              color: white;
+              border: 0.1rem solid;
+              border-color: Style.$grey;                
+              font-size: 1.2rem;
+              box-sizing: border-box;
+              padding: 0.5rem;
+              width: 12rem;
+              height: 3rem;
+              border-radius: 1.5rem;
+              text-transform: uppercase; 
+              text-align: center; 
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: 0.2s all;      
+                
+              .addtocart__icon {
+                margin-right: 0.5rem;
+                font-size: 1.5rem;
+              }
+            }
+
         }
     }
 
